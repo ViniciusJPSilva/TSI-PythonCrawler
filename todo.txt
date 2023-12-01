@@ -1,0 +1,108 @@
+Crie um sistema de busca para a página de editais do Campus Barbacena: 
+
+https://www.ifsudestemg.edu.br/editais/editais-de-barbacena
+
+ 
+
+ Etapa 1: coletar todo o conteúdo do site. Para cada edital, armazenar:
+
+- Título
+
+- Modalidade
+
+- Número
+
+- Ano
+
+- Situação
+
+- Link direto para o PDF
+
+ 
+
+Etapa 2: persistir os dados coletados em disco, em um formato adequado.
+
+ 
+
+Etapa 3: criar um programa de busca (em modo texto), onde o usuário pode informar:
+
+- Termo de busca: a ser pesquisado nos títulos
+
+- Filtro de modalidade
+
+- Filtro de número
+
+- Filtro de ano
+
+- Filtro de situação
+
+ 
+
+Exemplo de uso:
+
+# Busca editais com o termo "informática"
+
+python3 busca_edital.py informática
+
+ 
+
+# Busca editais com os termos "informática" e "turismo", com ano 2022
+
+python3 busca_edital.py informática turismo -ano 2022
+
+ 
+
+# Busca editais com os termos "meio" e "ambiente", com ano 2022 e modalidade "extensão"
+
+python3 busca_edital.py meio ambiente -ano 2022 -modalidade extensão
+
+ 
+
+Saída da consulta: 
+
+Termo de busca: "informática"
+
+Filtros:
+
+  ano: 2021
+
+  modalidade: extensão
+
+Tempo de resposta: 400ms
+
+
+
+2 resultados
+
+------------
+
+Edital 54/2023: Edital de chamada para submissão de resumos para a Semana Acadêmica do Curso de Licenciatura em Educação Física do IF Sudeste MG - Campus Barbacena
+
+Link: https://www.ifsudestemg.edu.br/editais/barbacena/ensino/edital-54-2023-edital-de-chamada-para-submissao-de-resumos-para-a-semana-academica-do-curso-de-licenciatura-em-educacao-fisica-do-if-sudeste-mg-campus-barbacena/edital-54.pdf
+
+
+
+2023/52: 1° Festival de Música do IF Sudeste MG – IFestival 2023
+
+Link: https://www.ifsudestemg.edu.br/editais/barbacena/extensao/2023/edital-ndeg-52-1deg-festival-de-musica-do-if-sudeste-mg-2013-ifestival-2023/edital-inscricoes-ifestival.pdf
+
+
+
+Dicas de bibliotecas úteis
+
+- Requests
+
+- Beautiful Soup
+
+- argparse ou getopt
+
+- sqlite
+
+- pickle
+
+
+
+
+
+
+TP 121.52380514144897
